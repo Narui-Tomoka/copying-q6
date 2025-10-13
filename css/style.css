@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*! 使用した命名規則は「BEM」です */
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -29,4 +31,8 @@ h3 {
 
 img {
   object-fit: cover;
+}
+
+.footer {
+  text-orientation: upright;
 }

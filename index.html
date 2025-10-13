@@ -7,8 +7,29 @@
     <title>創作</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- headerに背景設定。画面全体に広げる -->
+    <header class="header">
+      <!-- header__containerにpadding設定し子要素の配置調整 -->
+      <div class="header__container">
+        <h1 class="header__pagetitle">創作</h1>
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu__item"><a href="#">お知らせ</a></li>
+            <li class="header__menu__item"><a href="#">商品のご紹介</a></li>
+            <li class="header__menu__item"><a href="#">店舗のご案内</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- positionでボタンの位置設定 -->
+      <a href="#">オンラインストアを見る</a>
+    </header>
+    <main>
+      <section class="news">
+        <span class="section__subtitle">News</span>
+        <h2 class="section__title">お知らせ</h2>
+      </section>
+      <section class="section__title">新しい価値の創造</section>
+    </main>
+    <footer class="footer"></footer>
   </body>
 </html>
