@@ -1,0 +1,52 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+.header {
+  // headerはそのままwriting-mode: vertical-rl;を指定してもレイアウト崩れない
+  writing-mode: vertical-rl;
+  background: url(../img/1920x1080.png) center/cover;
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  position: relative;
+  color: vars.$header-color;
+  @include mix.mq(sp) {
+    background: url(../img/768x1024.png) center/cover;
+    padding: 20px 15px;
+  }
+  &__title a {
+    color: vars.$header-color;
+    font-size: 2.75rem;
+    letter-spacing: 5px;
+    margin-left: 36px;
+    display: block;
+  }
+  &__item {
+    margin-left: vars.$nav-margin;
+    color: #fff;
+    &:last-child {
+      margin-left: 0;
+    }
+    & a {
+      color: #fff;
+    }
+  }
+  &__btn {
+    padding: 5px;
+    background-color: vars.$header-btn-color;
+    text-align: center;
+    position: absolute;
+    left: 36px;
+    bottom: 36px;
+    @include mix.mq(sp) {
+      left: 18px;
+      bottom: 18px;
+    }
+    &__link {
+      display: inline-block;
+      padding: 1.8rem 1.2rem;
+      color: vars.$header-color;
+      border: 1px solid vars.$header-color;
+    }
+  }
+}

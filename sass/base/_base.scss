@@ -1,0 +1,51 @@
+@use "./variables" as vars;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Noto Serif JP", "Zen Old Mincho", "Shippori Mincho", serif;
+  background-color: #e6e2d7;
+  cursor: pointer;
+}
+
+// writing-mode: vertical-rl;は縦書きにしたい要素そのものに指定する！
+// headerやmainに指定したら要素の流れ自体が変わってしまってうまくいかない。
+// ↓このプロパティを「縦書きにしたい要素そのもの」に指定する
+// writing-mode: vertical-rl; // 縦書き指定
+// text-orientation: upright; // 英数字を縦向きに指定
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+section {
+  display: block;
+}

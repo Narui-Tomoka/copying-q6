@@ -1,0 +1,78 @@
+@use "../base/variables" as vars;
+@use "../base/mixins" as mix;
+
+#footer {
+  background-color: vars.$footer-bg;
+  color: #fff;
+  padding: 90px 90px 30px 30px;
+  @include mix.mq(sp) {
+    padding: 30px 10px;
+  }
+}
+
+.footer {
+  &__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &__right {
+    writing-mode: vertical-rl; // containerにつけるとflexの軸が変わってしまう
+    // 他のプロパティと違って小さい範囲で適用させる
+  }
+  &__title {
+    font-size: 2.8rem;
+  }
+  &__address {
+    font-size: 0.95rem;
+    font-style: normal;
+    margin-right: 60px;
+    @include mix.mq(sp) {
+      margin-right: 20px;
+    }
+  }
+  &__nav {
+    margin-right: 40px;
+    @include mix.mq(sp) {
+      margin-right: 20px;
+    }
+    &__item {
+      margin-left: vars.$nav-margin;
+      color: #fff;
+      @include mix.mq(sp) {
+        font-size: 0.8rem;
+        margin-left: 10px;
+      }
+      &:last-child {
+        margin-left: 0;
+      }
+      & a {
+        color: #fff;
+      }
+    }
+  }
+  &__left {
+    writing-mode: vertical-rl;
+    & a {
+      color: #fff;
+      font-size: 0.8rem;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 1px;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        background-color: #fff;
+      }
+      &:last-child::after {
+        content: none;
+      }
+    }
+  }
+  &__copyright {
+    padding-top: 5px;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+}

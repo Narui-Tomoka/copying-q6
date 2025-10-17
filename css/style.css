@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/*! 使用した命名規則は「BEM」です */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  background-repeat: no-repeat;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Noto Serif JP", "Zen Old Mincho", "Shippori Mincho", serif;
+  background-color: #e6e2d7;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+section {
+  display: block;
+}
+
+.en {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.ja {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media screen and (max-width: 775px) {
+  .sp__none {
+    display: none;
+  }
+}
+
+.section__title {
+  writing-mode: vertical-rl;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 90px 90px 30px 30px;
+}
+@media screen and (max-width: 775px) {
+  #footer {
+    padding: 30px 10px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.footer__right {
+  writing-mode: vertical-rl;
+}
+.footer__title {
+  font-size: 2.8rem;
+}
+.footer__address {
+  font-size: 0.95rem;
+  font-style: normal;
+  margin-right: 60px;
+}
+@media screen and (max-width: 775px) {
+  .footer__address {
+    margin-right: 20px;
+  }
+}
+.footer__nav {
+  margin-right: 40px;
+}
+@media screen and (max-width: 775px) {
+  .footer__nav {
+    margin-right: 20px;
+  }
+}
+.footer__nav__item {
+  margin-left: 20px;
+  color: #fff;
+}
+@media screen and (max-width: 775px) {
+  .footer__nav__item {
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+}
+.footer__nav__item:last-child {
+  margin-left: 0;
+}
+.footer__nav__item a {
+  color: #fff;
+}
+.footer__left {
+  writing-mode: vertical-rl;
+}
+.footer__left a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.footer__left a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.footer__left a:last-child::after {
+  content: none;
+}
+.footer__copyright {
+  padding-top: 5px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.header {
+  writing-mode: vertical-rl;
+  background: url(../img/1920x1080.png) center/cover;
+  width: 100%;
+  height: 100vh;
+  padding: 60px;
+  position: relative;
+  color: #fff;
+}
+@media screen and (max-width: 775px) {
+  .header {
+    background: url(../img/768x1024.png) center/cover;
+    padding: 20px 15px;
+  }
+}
+.header__title a {
+  color: #fff;
+  font-size: 2.75rem;
+  letter-spacing: 5px;
+  margin-left: 36px;
+  display: block;
+}
+.header__item {
+  margin-left: 20px;
+  color: #fff;
+}
+.header__item:last-child {
+  margin-left: 0;
+}
+.header__item a {
+  color: #fff;
+}
+.header__btn {
+  padding: 5px;
+  background-color: #444;
+  text-align: center;
+  position: absolute;
+  left: 36px;
+  bottom: 36px;
+}
+@media screen and (max-width: 775px) {
+  .header__btn {
+    left: 18px;
+    bottom: 18px;
+  }
+}
+.header__btn__link {
+  display: inline-block;
+  padding: 1.8rem 1.2rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.news {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 200px;
+  padding-top: 200px;
+}
+@media screen and (max-width: 775px) {
+  .news {
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .news__title .ja {
+    font-size: 1.8rem;
+    line-height: 1.1rem;
+  }
+}
+.news__list {
+  margin: 80px 80px 0 0;
+  writing-mode: vertical-rl;
+}
+@media screen and (max-width: 775px) {
+  .news__list {
+    margin: 20px 20px 0 0;
+  }
+}
+.news__list li {
+  border-right: 1px solid #000;
+  padding: 0 20px;
+}
+@media screen and (max-width: 775px) {
+  .news__list li {
+    padding: 0 10px;
+  }
+}
+.news__list li:last-child {
+  border-left: 1px solid #000;
+}
+@media screen and (max-width: 775px) {
+  .news__list li:nth-child(3) {
+    border-left: 1px solid #000;
+  }
+}
+.news__list li time {
+  font-size: 0.8rem;
+}
+.news__list li p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.values {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 775px) {
+  .values {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .values__title .ja {
+    font-size: 1.5rem;
+  }
+}
+.values__title .en {
+  margin-top: 20px;
+}
+.values__img {
+  margin-top: 100px;
+  width: 70%;
+  padding: 0 10px;
+  position: relative;
+}
+@media screen and (max-width: 775px) {
+  .values__img {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+.values__img img {
+  display: block;
+  margin: 0 auto;
+}
+.values__img p {
+  white-space: nowrap;
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  background-color: rgba(255, 242, 0, 0.5);
+  text-align: center;
+  padding: 4% 15%;
+}
+
+.science {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
+}
+@media screen and (max-width: 775px) {
+  .science {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 775px) {
+  .science__title .ja {
+    font-size: 1.5rem;
+  }
+}
+.science__title .en {
+  margin-top: 20px;
+}
+.science__img {
+  margin-top: 100px;
+  width: 70%;
+  padding: 0 10px;
+  position: relative;
+}
+@media screen and (max-width: 775px) {
+  .science__img {
+    width: 100%;
+  }
+}
+.science__img img {
+  display: block;
+  margin: 0 auto;
+}
+.science__img p {
+  white-space: nowrap;
+  position: absolute;
+  top: 83%;
+  right: 1%;
+  background-color: rgba(182, 47, 42, 0.5);
+  text-align: center;
+  padding: 4% 15%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  vertical-align: bottom;
+}
