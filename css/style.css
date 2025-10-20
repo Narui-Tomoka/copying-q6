@@ -75,7 +75,7 @@ section {
 #footer {
   background-color: #000;
   color: #fff;
-  padding: 90px 90px 30px 30px;
+  padding: 80px 80px 30px 30px;
 }
 @media screen and (max-width: 775px) {
   #footer {
@@ -92,12 +92,13 @@ section {
   writing-mode: vertical-rl;
 }
 .footer__title {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
+  letter-spacing: 0.5rem;
 }
 .footer__address {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-style: normal;
-  margin-right: 60px;
+  margin-right: 50px;
 }
 @media screen and (max-width: 775px) {
   .footer__address {
@@ -105,7 +106,7 @@ section {
   }
 }
 .footer__nav {
-  margin-right: 40px;
+  margin-right: 55px;
 }
 @media screen and (max-width: 775px) {
   .footer__nav {
@@ -133,7 +134,7 @@ section {
 }
 .footer__left a {
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 .footer__left a::after {
   content: "";
@@ -235,7 +236,7 @@ section {
 }
 .news__list li {
   border-right: 1px solid #000;
-  padding: 0 20px;
+  padding: 0 25px;
 }
 @media screen and (max-width: 775px) {
   .news__list li {
@@ -278,14 +279,12 @@ section {
 }
 .values__img {
   margin-top: 100px;
-  width: 70%;
-  padding: 0 10px;
+  width: 65%;
   position: relative;
 }
 @media screen and (max-width: 775px) {
   .values__img {
     width: 100%;
-    padding: 0 10px;
   }
 }
 .values__img img {
@@ -295,11 +294,11 @@ section {
 .values__img p {
   white-space: nowrap;
   position: absolute;
-  top: 80%;
-  left: 2%;
+  top: 79%;
+  left: -1%;
   background-color: rgba(255, 242, 0, 0.5);
   text-align: center;
-  padding: 4% 15%;
+  padding: 5% 15%;
 }
 
 .science {
@@ -322,8 +321,7 @@ section {
 }
 .science__img {
   margin-top: 100px;
-  width: 70%;
-  padding: 0 10px;
+  width: 65%;
   position: relative;
 }
 @media screen and (max-width: 775px) {
@@ -338,11 +336,11 @@ section {
 .science__img p {
   white-space: nowrap;
   position: absolute;
-  top: 83%;
-  right: 1%;
+  top: 79%;
+  right: -1%;
   background-color: rgba(182, 47, 42, 0.5);
   text-align: center;
-  padding: 4% 15%;
+  padding: 5% 15%;
 }
 
 .map iframe {
