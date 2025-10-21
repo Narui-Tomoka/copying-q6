@@ -58,8 +58,11 @@
   }
   &__title {
     & .ja {
+      line-height: 1;
+      margin-left: 20px;
       @include mix.mq(sp) {
         font-size: vars.$sp-font-size;
+        margin-left: 10px;
       }
     }
     & .en {
@@ -75,13 +78,13 @@
     }
     & img {
       display: block;
-      margin: 0 auto;
+      width: 100%;
     }
     & p {
       white-space: nowrap;
       position: absolute;
       top: 79%;
-      left: -1%;
+      left: -2%;
       background-color: rgba($color: #fff200, $alpha: 0.5);
       text-align: center;
       padding: 5% 15%;
@@ -98,8 +101,11 @@
   }
   &__title {
     & .ja {
+      line-height: 1;
+      margin-right: 20px;
       @include mix.mq(sp) {
         font-size: vars.$sp-font-size;
+        margin-right: 10px;
       }
     }
     & .en {
@@ -115,13 +121,13 @@
     }
     & img {
       display: block;
-      margin: 0 auto;
+      width: 100%;
     }
     & p {
       white-space: nowrap;
       position: absolute;
       top: 79%;
-      right: -1%; // leftにすると幅縮小時に横スクロールが出てしまうためright
+      right: -2%; // leftにすると幅縮小時に横スクロールが出てしまうためright
       background-color: rgba($color: rgb(182, 47, 42), $alpha: 0.5);
       text-align: center;
       padding: 5% 15%;

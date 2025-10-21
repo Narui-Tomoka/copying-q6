@@ -59,7 +59,7 @@ section {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 16px;
 }
 
 @media screen and (max-width: 775px) {
@@ -269,9 +269,14 @@ section {
     margin-bottom: 80px;
   }
 }
+.values__title .ja {
+  line-height: 1;
+  margin-left: 20px;
+}
 @media screen and (max-width: 775px) {
   .values__title .ja {
     font-size: 1.5rem;
+    margin-left: 10px;
   }
 }
 .values__title .en {
@@ -289,13 +294,13 @@ section {
 }
 .values__img img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 .values__img p {
   white-space: nowrap;
   position: absolute;
   top: 79%;
-  left: -1%;
+  left: -2%;
   background-color: rgba(255, 242, 0, 0.5);
   text-align: center;
   padding: 5% 15%;
@@ -311,9 +316,14 @@ section {
     margin-bottom: 80px;
   }
 }
+.science__title .ja {
+  line-height: 1;
+  margin-right: 20px;
+}
 @media screen and (max-width: 775px) {
   .science__title .ja {
     font-size: 1.5rem;
+    margin-right: 10px;
   }
 }
 .science__title .en {
@@ -331,13 +341,13 @@ section {
 }
 .science__img img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 .science__img p {
   white-space: nowrap;
   position: absolute;
   top: 79%;
-  right: -1%;
+  right: -2%;
   background-color: rgba(182, 47, 42, 0.5);
   text-align: center;
   padding: 5% 15%;
